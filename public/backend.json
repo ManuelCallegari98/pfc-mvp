@@ -1,0 +1,356 @@
+{
+  "roles": [
+    {
+      "rolId": 1,
+      "nombre": "Administrador"
+    },
+    {
+      "rolId": 2,
+      "nombre": "Gerente"
+    },
+    {
+      "rolId": 3,
+      "nombre": "Operario"
+    },
+    {
+      "rolId": 4,
+      "nombre": "Proveedor"
+    }
+  ],
+  "usuarios": [
+    {
+      "usuarioId": 1,
+      "nombreUsuario": "admin",
+      "password": "admin",
+      "email": "admin@sistema.com",
+      "rolId": 1,
+      "activo": true
+    },
+    {
+      "usuarioId": 2,
+      "nombreUsuario": "gerente",
+      "password": "gerente123",
+      "email": "gerente@granja.com",
+      "rolId": 2,
+      "activo": true
+    },
+    {
+      "usuarioId": 3,
+      "nombreUsuario": "operario1",
+      "password": "operario123",
+      "email": "op1@granja.com",
+      "rolId": 3,
+      "activo": true
+    }
+  ],
+  "camadas": [
+    {
+      "camadaId": 1,
+      "fechaIngreso": "2024-03-01",
+      "fechaSalida": null,
+      "proveedor": "Frigorífico Las Camelias"
+    },
+    {
+      "camadaId": 2,
+      "fechaIngreso": "2024-04-05",
+      "fechaSalida": "2024-05-15",
+      "proveedor": "Frigorífico Las Camelias"
+    }
+  ],
+ "galpones": [
+    {
+      "galponId": 1,
+      "nombre": "Galpón 1",
+      "camadaId": 1
+    },
+    {
+      "galponId": 2,
+      "nombre": "Galpón 2",
+      "camadaId": 1
+    },
+    {
+      "galponId": 3,
+      "nombre": "Galpón 3",
+      "camadaId": 1
+    },
+    {
+      "galponId": 4,
+      "nombre": "Galpón 4",
+      "camadaId": 1
+    }
+  ],
+  "camadaGalpon": [
+    {
+      "registroId": 1,
+      "galponId": 1,
+      "camadaId": 1,
+      "cantidadInicial": 2500
+    },
+    {
+      "registroId": 2,
+      "galponId": 2,
+      "camadaId": 1,
+      "cantidadInicial": 2300
+    },
+    {
+      "registroId": 5,
+      "galponId": 3,
+      "camadaId": 1,
+      "cantidadInicial": 3000
+    },
+    {
+      "registroId": 6,
+      "galponId": 4,
+      "camadaId": 1,
+      "cantidadInicial": 2800
+    },
+    {
+      "registroId": 3,
+      "galponId": 3,
+      "camadaId": 2,
+      "cantidadInicial": 3000
+    },
+    {
+      "registroId": 4,
+      "galponId": 4,
+      "camadaId": 2,
+      "cantidadInicial": 2800
+    }
+  ],
+"secciones": [
+    {
+      "seccionId": 1,
+      "galponId": 1,
+      "nombre": "A1",
+      "temperatura": 20.5,
+      "humedad": 60.0,
+      "fechaHora": "2024-03-13T10:00:00"
+    },
+    {
+      "seccionId": 2,
+      "galponId": 1,
+      "nombre": "A2",
+      "temperatura": 21.2,
+      "humedad": 63.0,
+      "fechaHora": "2024-03-13T10:00:00"
+    },
+    {
+      "seccionId": 3,
+      "galponId": 2,
+      "nombre": "B1",
+      "temperatura": 27.2,
+      "humedad": 65.5,
+      "fechaHora": "2024-03-13T10:00:00"
+    },
+    {
+      "seccionId": 4,
+      "galponId": 1,
+      "nombre": "A3",
+      "temperatura": 22.1,
+      "humedad": 61.5,
+      "fechaHora": "2024-03-15T14:30:00"
+    },
+    {
+      "seccionId": 5,
+      "galponId": 1,
+      "nombre": "A4",
+      "temperatura": 23.5,
+      "humedad": 62.8,
+      "fechaHora": "2024-03-15T14:30:00"
+    },
+    {
+      "seccionId": 6,
+      "galponId": 2,
+      "nombre": "B2",
+      "temperatura": 26.8,
+      "humedad": 64.2,
+      "fechaHora": "2024-03-15T15:00:00"
+    },
+    {
+      "seccionId": 7,
+      "galponId": 2,
+      "nombre": "B3",
+      "temperatura": 25.9,
+      "humedad": 66.1,
+      "fechaHora": "2024-03-16T09:15:00"
+    },
+    {
+      "seccionId": 8,
+      "galponId": 2,
+      "nombre": "B4",
+      "temperatura": 27.5,
+      "humedad": 65.0,
+      "fechaHora": "2024-03-16T09:15:00"
+    },
+    {
+      "seccionId": 9,
+      "galponId": 3,
+      "nombre": "C1",
+      "temperatura": 19.8,
+      "humedad": 58.7,
+      "fechaHora": "2024-04-07T11:00:00"
+    },
+    {
+      "seccionId": 10,
+      "galponId": 3,
+      "nombre": "C2",
+      "temperatura": 20.1,
+      "humedad": 59.3,
+      "fechaHora": "2024-04-07T11:00:00"
+    },
+    {
+      "seccionId": 11,
+      "galponId": 3,
+      "nombre": "C3",
+      "temperatura": 19.5,
+      "humedad": 60.5,
+      "fechaHora": "2024-04-08T16:45:00"
+    },
+    {
+      "seccionId": 12,
+      "galponId": 3,
+      "nombre": "C4",
+      "temperatura": 20.8,
+      "humedad": 57.9,
+      "fechaHora": "2024-04-08T16:45:00"
+    },
+    {
+      "seccionId": 13,
+      "galponId": 4,
+      "nombre": "D1",
+      "temperatura": 24.6,
+      "humedad": 68.2,
+      "fechaHora": "2024-04-09T08:30:00"
+    },
+    {
+      "seccionId": 14,
+      "galponId": 4,
+      "nombre": "D2",
+      "temperatura": 25.1,
+      "humedad": 67.5,
+      "fechaHora": "2024-04-09T08:30:00"
+    },
+    {
+      "seccionId": 15,
+      "galponId": 4,
+      "nombre": "D3",
+      "temperatura": 23.9,
+      "humedad": 69.1,
+      "fechaHora": "2024-04-10T12:00:00"
+    },
+    {
+      "seccionId": 16,
+      "galponId": 4,
+      "nombre": "D4",
+      "temperatura": 25.5,
+      "humedad": 66.8,
+      "fechaHora": "2024-04-10T12:00:00"
+    },
+    {
+      "seccionId": 17,
+      "galponId": 4,
+      "nombre": "D5",
+      "temperatura": 24.2,
+      "humedad": 70.3,
+      "fechaHora": "2024-04-10T18:15:00"
+    }
+  ],
+  "dispositivos": [
+    {
+      "id": 1,
+      "seccionId": 1,
+      "tipo": "ventilador",
+      "estado": "apagado"
+    },
+    {
+      "id": 2,
+      "seccionId": 1,
+      "tipo": "aspersor",
+      "estado": "encendido"
+    },
+    {
+      "id": 3,
+      "seccionId": 2,
+      "tipo": "ventilador",
+      "estado": "encendido"
+    }
+  ],
+  "registroCamadaGalpon": [
+    {
+      "registroId": 1,
+      "galponId": 1,
+      "fecha": "2024-03-10",
+      "pesoPromedio": 0.75,
+      "cantidadMuestra": 25,
+      "cantidadMuertes": 5,
+      "motivoMuerte": "Calor"
+    }
+  ],
+  "climaExterno": [
+    {
+      "climaId": 1,
+      "fechaHora": "2024-03-13T10:00:00",
+      "temperatura": 28.0,
+      "humedad": 70.0,
+      "viento": 12.0,
+      "lluvia": false,
+      "presion": 1012.3
+    }
+  ],
+  "alertas": [
+    {
+      "alertaId": 1,
+      "seccionId": 1,
+      "tipo": "critico",
+      "descripcion": "Temperatura crítica detectada",
+      "fechaHora": "2024-03-13T10:05:00",
+      "resuelta": false,
+      "resolucion": ""
+    }
+  ],
+  "configuracionAlerta": [
+    {
+      "configId": 1,
+      "galponId": 1,
+      "variable": "temperatura",
+      "valorMin": 20,
+      "valorMax": 28,
+      "rolANotificar": "Operario",
+      "canalNotificacion": "email"
+    }
+  ],
+  "visitasVeterinarias": [
+    {
+      "visitaId": 1,
+      "camadaId": 1,
+      "fecha": "2024-03-12",
+      "profesional": "Dra. López",
+      "descripcion": "Signos de estrés por calor",
+      "medicacion": "Vitaminas y electrolitos",
+      "severidad": "media"
+    }
+  ],
+  "informeDiario": [
+    {
+      "informeId": 1,
+      "camadaId": 1,
+      "fecha": "2024-03-13",
+      "avesFallecidasHoy": 3,
+      "ultimoPesoPromedio": 0.78,
+      "requiereVeterinario": false,
+      "reposicionAlimentoNecesaria": true,
+      "incidencia": "Revisión de silo 1",
+      "enviado": true
+    }
+  ],
+  "logSistema": [
+    {
+      "logId": 1,
+      "usuarioId": 2,
+      "fechaHora": "2024-03-13T09:00:00",
+      "descripcion": "Modificó alerta para galpón A",
+      "modulo": "alertas",
+      "tipoAccion": "update"
+    }
+  ]
+}
